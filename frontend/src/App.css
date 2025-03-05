@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+.no-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  /* Allow selection for input elements inside */
+  .no-select input {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+  }
+
+/* Add media queries for better mobile responsiveness */
+@media (max-width: 768px) {
+  .no-select {
+    padding: 0;
+  }
+
+  .no-select .w-full {
+    width: 100%;
+  }
+
+  .no-select .h-full {
+    height: 100%;
+  }
+
+  .no-select .p-4 {
+    padding: 1rem;
+  }
+}
